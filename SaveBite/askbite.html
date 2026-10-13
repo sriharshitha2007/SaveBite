@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AskBite AI — Smart Food Preservation Assistant | SaveBite</title>
+  <meta name="description" content="Ask practical food storage, refrigeration temperature, and leftovers preservation questions to the AskBite assistant." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Global Project Banner -->
+  <div class="project-banner">
+    <div class="banner-content">
+      <span class="badge-demo">Demo Edition</span>
+      <span>SaveBite Web Application &amp; Demonstration Suite</span>
+    </div>
+    <a href="SaveBite_Complete_Project.zip" download="SaveBite_Complete_Project.zip" class="banner-cta">
+      <span>⬇️</span> Download Complete ZIP
+    </a>
+  </div>
+
+  <div class="app-layout">
+    <!-- Desktop & Mobile App Sidebar -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="brand-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10c0-1.846-.5-3.577-1.378-5.06"/>
+            <path d="M12 6v6l4 2"/>
+            <path d="M16 2.5a5 5 0 0 1 5 5"/>
+          </svg>
+          SaveBite<span class="dot">.</span>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="7" height="9" x="3" y="3" rx="1"/>
+            <rect width="7" height="5" x="14" y="3" rx="1"/>
+            <rect width="7" height="9" x="14" y="12" rx="1"/>
+            <rect width="7" height="5" x="3" y="16" rx="1"/>
+          </svg>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="my-food.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+          </svg>
+          <span>My Food</span>
+        </a>
+
+        <a href="preservation.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5z"/>
+            <path d="M6 6h10"/>
+            <path d="M6 10h10"/>
+          </svg>
+          <span>Preservation</span>
+        </a>
+
+        <a href="waste-tracker.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3v18h18"/>
+            <path d="m19 9-5 5-4-4-3 3"/>
+          </svg>
+          <span>Waste Tracker</span>
+        </a>
+
+        <a href="donate.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+          <span>Donate Surplus</span>
+        </a>
+
+        <a href="askbite.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          <span>AskBite AI</span>
+        </a>
+
+        <a href="settings.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-profile-summary">
+          <div class="user-info-text">
+            <div class="user-info-name">Alex Morgan</div>
+            <div class="user-info-role">Individual</div>
+          </div>
+          <button class="btn-logout" title="Sign Out">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+              <polyline points="16 17 21 12 16 7"/>
+              <line x1="21" y1="12" x2="9" y2="12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Viewport -->
+    <main class="app-main">
+      <header class="app-topbar">
+        <div class="breadcrumb-trail">
+          <button class="mobile-nav-toggle" aria-label="Toggle Navigation">☰</button>
+          <a href="dashboard.html" style="color: var(--color-text-muted);">Workspace</a>
+          <span style="color: #cbd5e1;">/</span>
+          <span class="breadcrumb-current">AskBite Assistant</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <button id="clear-chat-btn" class="btn btn-sm btn-secondary">Clear Chat</button>
+        </div>
+      </header>
+
+      <div class="app-content" style="max-width: 960px;">
+        <div class="page-header-row" style="margin-bottom: 1.25rem;">
+          <div>
+            <h1 class="page-title">AskBite Food Preservation Assistant</h1>
+            <div class="page-description">Instant culinary intelligence for humidity balancing, freezing science, and waste reduction.</div>
+          </div>
+        </div>
+
+        <!-- Chat Container -->
+        <div class="chat-container">
+          <div class="chat-header">
+            <div class="assistant-badge">
+              <div class="assistant-avatar">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10c0-1.846-.5-3.577-1.378-5.06"/>
+                  <path d="M12 6v6l4 2"/>
+                  <path d="M16 2.5a5 5 0 0 1 5 5"/>
+                </svg>
+              </div>
+              <div>
+                <strong style="display: block; font-size: 0.9375rem; color: var(--color-text-main);">AskBite Assistant</strong>
+                <span style="font-size: 0.75rem; color: var(--color-text-muted);">Client-Side Food Preservation Rule Engine</span>
+              </div>
+            </div>
+            <span class="status-badge status-fresh">Ready</span>
+          </div>
+
+          <!-- Message History -->
+          <div id="chat-messages" class="chat-messages">
+            <div class="message-bubble message-bot">
+              <p>
+                Hello! I am your <strong>AskBite Preservation Assistant</strong>.
+              </p>
+              <p style="margin-top: 0.5rem;">
+                I can give you immediate, practical advice on how to store fresh vegetables, avoid bread staling, safely cool cooked rice, configure refrigerator zones, or freeze meal-prep portions. What grocery item are you planning to store today?
+              </p>
+              <span class="message-timestamp">Just now</span>
+            </div>
+          </div>
+
+          <!-- Quick Suggested Question Chips -->
+          <div class="chat-prompt-chips">
+            <span style="font-size: 0.75rem; color: var(--color-text-muted); font-weight: 600;">Suggestions:</span>
+            <button class="chip-btn" data-prompt="How should I store tomatoes?">Store tomatoes</button>
+            <button class="chip-btn" data-prompt="How to store bananas without turning brown?">Bananas preservation</button>
+            <button class="chip-btn" data-prompt="How do I keep leafy greens and spinach crisp?">Crisp leafy greens</button>
+            <button class="chip-btn" data-prompt="Why shouldn't I refrigerate bread?">Bread storage rule</button>
+            <button class="chip-btn" data-prompt="How should I safely store cooked rice?">Cooked rice safety</button>
+            <button class="chip-btn" data-prompt="Why keep potatoes away from onions?">Potatoes &amp; onions</button>
+            <button class="chip-btn" data-prompt="What are the best habits to reduce food waste?">Reduce food waste</button>
+          </div>
+
+          <!-- Message Input Form -->
+          <form id="chat-form" class="chat-input-row">
+            <input 
+              type="text" 
+              id="chat-input" 
+              class="form-control" 
+              placeholder="Ask about storing herbs, dairy, meats, freezing leftovers..." 
+              required 
+              autocomplete="off"
+            />
+            <button type="submit" class="btn btn-primary">
+              <span>Send</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div style="font-size: 0.75rem; color: var(--color-text-muted); text-align: center; margin-top: 1rem;">
+          Transparency note: AskBite runs a client-side curated culinary food safety rule base. No external third-party API or tracking is invoked.
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

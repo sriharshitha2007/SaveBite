@@ -1,0 +1,6 @@
+{
+  "name": "SaveBite",
+  "description": "Smart Food Preservation & Waste Management System — Save food, track expiry, minimize waste, and share surplus.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

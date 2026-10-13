@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Preservation Encyclopedia — SaveBite</title>
+  <meta name="description" content="Master science-backed food storage techniques: temperature zones, crisper humidity regulation, FIFO methodology, and freezing guidelines." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Global Project Banner -->
+  <div class="project-banner">
+    <div class="banner-content">
+      <span class="badge-demo">Demo Edition</span>
+      <span>SaveBite Web Application &amp; Demonstration Suite</span>
+    </div>
+    <a href="SaveBite_Complete_Project.zip" download="SaveBite_Complete_Project.zip" class="banner-cta">
+      <span>⬇️</span> Download Complete ZIP
+    </a>
+  </div>
+
+  <!-- Public Top Navigation -->
+  <header class="public-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10c0-1.846-.5-3.577-1.378-5.06"/>
+          <path d="M12 6v6l4 2"/>
+          <path d="M16 2.5a5 5 0 0 1 5 5"/>
+        </svg>
+        SaveBite<span class="dot">.</span>
+      </a>
+
+      <nav class="public-nav">
+        <a href="index.html">Home</a>
+        <a href="preservation.html" class="active">Preservation</a>
+        <a href="donate.html">Donate Food</a>
+        <a href="askbite.html">AskBite AI</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="my-food.html" class="btn btn-primary btn-sm">My Food Inventory</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <!-- Header Hero -->
+    <div class="section-header" style="max-width: 820px; margin: 0 auto 3rem;">
+      <div class="hero-tag">
+        <span>📚</span> Practical Kitchen Science
+      </div>
+      <h1>Food Preservation Encyclopedia</h1>
+      <p class="section-subtitle">
+        Scientifically validated storage methods to slow decay, inhibit microbial growth, maintain nutrient density, and keep groceries fresh up to three times longer.
+      </p>
+    </div>
+
+    <!-- Refrigerator Anatomy Strip -->
+    <div class="card" style="margin-bottom: 3.5rem; background: #ffffff; border: 1px solid var(--color-border); padding: 2rem;">
+      <h3 style="margin-bottom: 0.5rem;">The Anatomy of a Cold Refrigerator (1°C – 4°C)</h3>
+      <p style="font-size: 0.9375rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+        Proper shelf placement prevents cross-contamination and balances temperature gradients.
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
+        <div style="background: var(--color-bg-subtle); padding: 1.25rem; border-radius: var(--radius-md);">
+          <strong style="color: var(--color-primary-dark); display: block; margin-bottom: 0.25rem;">Top Shelf (3°C – 4°C)</strong>
+          <span style="font-size: 0.8125rem; color: var(--color-text-body);">Most stable temperature. Place ready-to-eat leftovers, fermented kimchi/pickles, deli items, and culinary herbs here.</span>
+        </div>
+        <div style="background: var(--color-bg-subtle); padding: 1.25rem; border-radius: var(--radius-md);">
+          <strong style="color: var(--color-primary-dark); display: block; margin-bottom: 0.25rem;">Middle Shelf (2°C – 3°C)</strong>
+          <span style="font-size: 0.8125rem; color: var(--color-text-body);">Ideal for dairy products, eggs (kept in original carton to prevent odor absorption), and hard cheeses.</span>
+        </div>
+        <div style="background: var(--color-bg-subtle); padding: 1.25rem; border-radius: var(--radius-md);">
+          <strong style="color: var(--color-primary-dark); display: block; margin-bottom: 0.25rem;">Bottom Shelf (1°C – 2°C)</strong>
+          <span style="font-size: 0.8125rem; color: var(--color-text-body);">Coldest zone. Always place raw poultry, meats, and seafood here inside rimmed trays to eliminate downward dripping risks.</span>
+        </div>
+        <div style="background: var(--color-bg-subtle); padding: 1.25rem; border-radius: var(--radius-md);">
+          <strong style="color: var(--color-primary-dark); display: block; margin-bottom: 0.25rem;">Crisper Drawers</strong>
+          <span style="font-size: 0.8125rem; color: var(--color-text-body);">High humidity (closed vent) for tender greens and root veg; low humidity (open vent) for apples, pears, and gas-emitting fruits.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search & Filter Controls -->
+    <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+      <div class="search-input-wrapper" style="max-width: 380px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" id="preservation-search" class="form-control" placeholder="Search storage guide (e.g. berries, bread, rice)..." />
+      </div>
+
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <button class="btn btn-sm btn-primary preservation-cat-btn" data-category="all">All Categories</button>
+        <button class="btn btn-sm btn-secondary preservation-cat-btn" data-category="vegetables">Vegetables</button>
+        <button class="btn btn-sm btn-secondary preservation-cat-btn" data-category="fruits">Fruits</button>
+        <button class="btn btn-sm btn-secondary preservation-cat-btn" data-category="dairy">Dairy</button>
+        <button class="btn btn-sm btn-secondary preservation-cat-btn" data-category="grains">Grains &amp; Bakery</button>
+        <button class="btn btn-sm btn-secondary preservation-cat-btn" data-category="meat">Meat &amp; Seafood</button>
+        <button class="btn btn-sm btn-secondary preservation-cat-btn" data-category="leftovers">Cooked Leftovers</button>
+      </div>
+    </div>
+
+    <!-- Preservation Cards Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.75rem;">
+      <!-- Card 1: Leafy Greens -->
+      <div class="card card-hover preservation-card" data-category="vegetables">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
+          <h3>Leafy Greens &amp; Herbs</h3>
+          <span class="status-badge status-fresh">Vegetables</span>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <strong style="font-size: 0.8125rem; color: var(--color-primary-dark); display: block; margin-bottom: 0.25rem;">Recommended Method:</strong>
+          <p style="font-size: 0.875rem;">Line an airtight glass or plastic container with a dry cotton cloth or paper towel to catch condensation. Close tightly in the high-humidity crisper drawer.</p>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <strong style="font-size: 0.8125rem; color: #92400e; display: block; margin-bottom: 0.25rem;">Key Precaution:</strong>
+          <p style="font-size: 0.875rem; color: var(--color-text-body);">Never wash greens before storage; moisture accelerates bacterial rot. Wash only immediately before culinary prep.</p>
+        </div>
+        <div style="background: var(--color-bg-subtle); padding: 0.75rem 1rem; border-radius: var(--radius-md); font-size: 0.8125rem; color: var(--color-text-muted);">
+          <strong>Waste Impact:</strong> Prevents slimy leaf decay, extending salad viability from 3 days to 12+ days.
+        </div>
+      </div>
+
+      <!-- Card 2: Tomatoes -->
+      <div class="card card-hover preservation-card" data-category="vegetables">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
+          <h3>Tomatoes (Whole)</h3>
+          <span class="status-badge status-fresh">Vegetables</span>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <strong style="font-size: 0.8125rem; color: var(--color-primary-dark); display: block; margin-bottom: 0.25rem;">Recommended Method:</strong>
+          <p style="font-size: 0.875rem;">Store stem-down on a flat tray at room temperature (18°C – 22°C) away from direct sun. Stem-down positioning blocks air entry and moisture escape.</p>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <strong style="font-size: 0.8125rem; color: #92400e; display: block; margin-bottom: 0.25rem;">Key Precaution:</strong>
+          <p style="font-size: 0.875rem; color: var(--color-text-body);">Avoid refrigerator temperatures (&lt; 10°C) which deactivate flavor-synthesizing enzymes (z-3-hexenal) and yield a mealy texture.</p>
+        </div>
+        <div style="background: var(--color-bg-subtle); padding: 0.75rem 1rem; border-radius: var(--radius-md); font-size: 0.8125rem; color: var(--color-text-muted);">
+          <strong>Waste Impact:</strong> Retains peak sugar-acid ratio and aroma for up to 8 days on the counter.
+        </div>
+      </div>
+
+      <!-- Card 3: Berries -->
+      <div class="card card-hover preservation-card" data-category="fruits">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
+          <h3>Strawberries &amp; Berries</h3>
+          <span class="status-badge status-fresh">Fruits</span>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <strong style="font-size: 0.8125rem; color: var(--color-primary-dark); display: block; margin-bottom: 0.25rem;">Recommended Method:</strong>
+          <p style="font-size: 0.875rem;">Give berries a quick diluted vinegar bath (1 part white vinegar to 4 parts water), rinse, dry thoroughly on towels, and store in a ventilated glass dish lined with paper.</p>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <strong style="font-size: 0.8125rem; color: #92400e; display: block; margin-bottom: 0.25rem;">Key Precaution:</strong>
+          <p style="font-size: 0.875rem; color: var(--color-text-body);">Do not discard soft berries: blend them into smoothies or freeze on a sheet pan for future coulis and baking.</p>
+        </div>
+        <div style="background: var(--color-bg-subtle); padding: 0.75rem 1rem; border-radius: var(--radius-md); font-size: 0.8125rem; color: var(--color-text-muted);">
+          <strong>Waste Impact:</strong> Acetic acid kills mould spores, doubling berry shelf life from 3 to 7–9 days.
+        </div>
+      </div>
+
+      <!-- Card 4: Crusty Breads -->
+      <div class="card card-hover preservation-card" data-category="grains">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
+          <h3>Artisan Breads &amp; Sourdough</h3>
+          <span class="status-badge status-fresh">Grains &amp; Bakery</span>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <strong style="font-size: 0.8125rem; color: var(--color-primary-dark); display: block; margin-bottom: 0.25rem;">Recommended Method:</strong>
+          <p style="font-size: 0.875rem;">Keep cut-side down on a wooden cutting board, or store in a linen or unbleached paper bread sack at room temperature. For &gt; 3 days, slice and freeze airtight.</p>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <strong style="font-size: 0.8125rem; color: #92400e; display: block; margin-bottom: 0.25rem;">Key Precaution:</strong>
+          <p style="font-size: 0.875rem; color: var(--color-text-body);">Never refrigerate bread. Cold temperatures trigger rapid retrogradation, turning crumb dry and crumbly.</p>
+        </div>
+        <div style="background: var(--color-bg-subtle); padding: 0.75rem 1rem; border-radius: var(--radius-md); font-size: 0.8125rem; color: var(--color-text-muted);">
+          <strong>Waste Impact:</strong> Freezing sliced bread reduces household bread waste to nearly 0%. Toast slices straight from frozen!
+        </div>
+      </div>
+
+      <!-- Card 5: Cooked Rice & Grains -->
+      <div class="card card-hover preservation-card" data-category="leftovers">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
+          <h3>Cooked Rice &amp; Starches</h3>
+          <span class="status-badge status-fresh">Cooked Leftovers</span>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <strong style="font-size: 0.8125rem; color: var(--color-primary-dark); display: block; margin-bottom: 0.25rem;">Recommended Method:</strong>
+          <p style="font-size: 0.875rem;">Cool rapidly within 60 minutes by spreading onto a flat tray, transfer to an airtight container, and chill at &le; 4°C immediately. Consume within 3–4 days.</p>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <strong style="font-size: 0.8125rem; color: #92400e; display: block; margin-bottom: 0.25rem;">Key Precaution:</strong>
+          <p style="font-size: 0.875rem; color: var(--color-text-body);">Never leave cooked rice at ambient temperatures overnight. Resistant <em>Bacillus cereus</em> spores can multiply and produce heat-stable toxins.</p>
+        </div>
+        <div style="background: var(--color-bg-subtle); padding: 0.75rem 1rem; border-radius: var(--radius-md); font-size: 0.8125rem; color: var(--color-text-muted);">
+          <strong>Waste Impact:</strong> Portioning into single-serve freezer cubes gives up to 3 months of safe, quick dinners.
+        </div>
+      </div>
+
+      <!-- Card 6: Raw Meats & Seafood -->
+      <div class="card card-hover preservation-card" data-category="meat">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
+          <h3>Fresh Fish &amp; Poultry</h3>
+          <span class="status-badge status-fresh">Meat &amp; Seafood</span>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <strong style="font-size: 0.8125rem; color: var(--color-primary-dark); display: block; margin-bottom: 0.25rem;">Recommended Method:</strong>
+          <p style="font-size: 0.875rem;">Place in the deep chill zone (bottom drawer, 0°C – 2°C). Cook fish within 24–48 hours, or vacuum seal and freeze at -18°C.</p>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <strong style="font-size: 0.8125rem; color: #92400e; display: block; margin-bottom: 0.25rem;">Key Precaution:</strong>
+          <p style="font-size: 0.875rem; color: var(--color-text-body);">Store in a secondary sealed tray to prevent raw juices from contacting condiments or fresh produce.</p>
+        </div>
+        <div style="background: var(--color-bg-subtle); padding: 0.75rem 1rem; border-radius: var(--radius-md); font-size: 0.8125rem; color: var(--color-text-muted);">
+          <strong>Waste Impact:</strong> Defrost safely inside the refrigerator overnight rather than warm water to preserve protein texture and safety.
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to action footer -->
+    <div style="text-align: center; margin-top: 4rem;">
+      <div class="card" style="display: inline-block; padding: 2rem 3rem; background: #ffffff;">
+        <h3 style="margin-bottom: 0.5rem;">Have a specific grocery item not listed?</h3>
+        <p style="margin-bottom: 1.5rem; color: var(--color-text-muted);">Ask our intelligent client assistant for immediate preservation instructions.</p>
+        <a href="askbite.html" class="btn btn-primary">Open AskBite AI Assistant</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10c0-1.846-.5-3.577-1.378-5.06"/>
+            <path d="M12 6v6l4 2"/>
+            <path d="M16 2.5a5 5 0 0 1 5 5"/>
+          </svg>
+          SaveBite<span class="dot">.</span>
+        </a>
+        <p>Food Preservation Encyclopedia. Science-backed guidance for sustainable homes.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="my-food.html">My Food</a></li>
+          <li><a href="preservation.html">Preservation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="waste-tracker.html">Waste Tracker</a></li>
+          <li><a href="donate.html">Food Donation</a></li>
+          <li><a href="askbite.html">AskBite Assistant</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Download</h4>
+        <ul>
+          <li><a href="SaveBite_Complete_Project.zip" download="SaveBite_Complete_Project.zip">Download ZIP</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 SaveBite. Browser LocalStorage Demo Edition.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

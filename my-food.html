@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Food — Pantry Inventory | SaveBite</title>
+  <meta name="description" content="Manage your food inventory, monitor expiration dates, and apply optimal preservation storage." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Global Project Banner -->
+  <div class="project-banner">
+    <div class="banner-content">
+      <span class="badge-demo">Demo Edition</span>
+      <span>SaveBite Web Application &amp; Demonstration Suite</span>
+    </div>
+    <a href="SaveBite_Complete_Project.zip" download="SaveBite_Complete_Project.zip" class="banner-cta">
+      <span>⬇️</span> Download Complete ZIP
+    </a>
+  </div>
+
+  <div class="app-layout">
+    <!-- Desktop & Mobile App Sidebar -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="brand-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10c0-1.846-.5-3.577-1.378-5.06"/>
+            <path d="M12 6v6l4 2"/>
+            <path d="M16 2.5a5 5 0 0 1 5 5"/>
+          </svg>
+          SaveBite<span class="dot">.</span>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="7" height="9" x="3" y="3" rx="1"/>
+            <rect width="7" height="5" x="14" y="3" rx="1"/>
+            <rect width="7" height="9" x="14" y="12" rx="1"/>
+            <rect width="7" height="5" x="3" y="16" rx="1"/>
+          </svg>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="my-food.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+          </svg>
+          <span>My Food</span>
+        </a>
+
+        <a href="preservation.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5z"/>
+            <path d="M6 6h10"/>
+            <path d="M6 10h10"/>
+          </svg>
+          <span>Preservation</span>
+        </a>
+
+        <a href="waste-tracker.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3v18h18"/>
+            <path d="m19 9-5 5-4-4-3 3"/>
+          </svg>
+          <span>Waste Tracker</span>
+        </a>
+
+        <a href="donate.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+          <span>Donate Surplus</span>
+        </a>
+
+        <a href="askbite.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          <span>AskBite AI</span>
+        </a>
+
+        <a href="settings.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-profile-summary">
+          <div class="user-info-text">
+            <div class="user-info-name">Alex Morgan</div>
+            <div class="user-info-role">Individual</div>
+          </div>
+          <button class="btn-logout" title="Sign Out">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+              <polyline points="16 17 21 12 16 7"/>
+              <line x1="21" y1="12" x2="9" y2="12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Workspace Main Viewport -->
+    <main class="app-main">
+      <header class="app-topbar">
+        <div class="breadcrumb-trail">
+          <button class="mobile-nav-toggle" aria-label="Toggle Navigation">☰</button>
+          <a href="dashboard.html" style="color: var(--color-text-muted);">Workspace</a>
+          <span style="color: #cbd5e1;">/</span>
+          <span class="breadcrumb-current">My Food Inventory</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <button id="open-add-food-btn" class="btn btn-sm btn-primary">+ Add New Item</button>
+        </div>
+      </header>
+
+      <div class="app-content">
+        <!-- Title & Stats Header -->
+        <div class="page-header-row">
+          <div>
+            <h1 class="page-title">Pantry &amp; Fridge Inventory</h1>
+            <div class="page-description">Track food shelf-life, manage expiry warnings, and optimize kitchen consumption.</div>
+          </div>
+        </div>
+
+        <!-- Inventory Data Table Container -->
+        <div class="table-container">
+          <!-- Toolbar & Filters -->
+          <div class="table-toolbar">
+            <div class="search-input-wrapper">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+              <input type="text" id="food-search-input" class="form-control" placeholder="Search by food name or notes..." />
+            </div>
+
+            <div class="filter-group">
+              <select id="food-category-filter" class="form-control" style="width: auto;">
+                <option value="all">All Categories</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Fruits">Fruits</option>
+                <option value="Dairy">Dairy</option>
+                <option value="Grains">Grains &amp; Bakery</option>
+                <option value="Meat and Seafood">Meat &amp; Seafood</option>
+                <option value="Cooked Food">Cooked Food</option>
+                <option value="Other">Pantry &amp; Other</option>
+              </select>
+
+              <select id="food-status-filter" class="form-control" style="width: auto;">
+                <option value="all">All Statuses</option>
+                <option value="fresh">Fresh (&gt; 3 days)</option>
+                <option value="expiring">Expiring Soon (&le; 3 days)</option>
+                <option value="expired">Expired</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Table Content -->
+          <div style="overflow-x: auto;">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Food Item &amp; Notes</th>
+                  <th>Category</th>
+                  <th>Quantity</th>
+                  <th>Expiry Date</th>
+                  <th>Freshness Status</th>
+                  <th style="text-align: right;">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="food-table-tbody">
+                <tr>
+                  <td colspan="6" style="text-align: center; padding: 2rem;">Loading inventory records...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Add / Edit Food Item Modal -->
+  <div id="food-modal" class="modal-overlay">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="food-modal-title">Add Food Item to Inventory</h3>
+        <button type="button" class="close-modal-btn" style="font-size: 1.25rem; color: var(--color-text-muted);">&times;</button>
+      </div>
+
+      <form id="food-modal-form">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="modal-food-name" class="form-label">Food Item Name <span class="required">*</span></label>
+            <input type="text" id="modal-food-name" class="form-control" placeholder="e.g. Organic Baby Spinach" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="modal-food-category" class="form-label">Category <span class="required">*</span></label>
+              <select id="modal-food-category" class="form-control" required>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Fruits">Fruits</option>
+                <option value="Dairy">Dairy</option>
+                <option value="Grains">Grains &amp; Bakery</option>
+                <option value="Meat and Seafood">Meat &amp; Seafood</option>
+                <option value="Cooked Food">Cooked Food</option>
+                <option value="Other">Pantry &amp; Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Quantity &amp; Unit <span class="required">*</span></label>
+              <div style="display: flex; gap: 0.5rem;">
+                <input type="number" id="modal-food-qty" class="form-control" value="1" min="0.1" step="any" required style="width: 50%;" />
+                <select id="modal-food-unit" class="form-control" style="width: 50%;">
+                  <option value="pcs">pcs</option>
+                  <option value="g">g</option>
+                  <option value="kg">kg</option>
+                  <option value="packs">packs</option>
+                  <option value="liters">liters</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="modal-food-storage-date" class="form-label">Stored / Purchased Date</label>
+              <input type="date" id="modal-food-storage-date" class="form-control" />
+            </div>
+
+            <div class="form-group">
+              <label for="modal-food-expiry-date" class="form-label">Expiry Date <span class="required">*</span></label>
+              <input type="date" id="modal-food-expiry-date" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="modal-food-notes" class="form-label">Storage Notes / Preservation Method</label>
+            <textarea id="modal-food-notes" class="form-control" rows="2" placeholder="e.g. In crisper with paper towel, sealed in airtight container"></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary close-modal-btn">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Food Item</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

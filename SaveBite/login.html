@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — SaveBite Food Management</title>
+  <meta name="description" content="Sign in to your SaveBite account to manage your food pantry inventory, track waste, and share surplus." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="background: #ffffff;">
+
+  <!-- Global Project Banner -->
+  <div class="project-banner">
+    <div class="banner-content">
+      <span class="badge-demo">Demo Edition</span>
+      <span>SaveBite Web Application &amp; Demonstration Suite</span>
+    </div>
+    <a href="SaveBite_Complete_Project.zip" download="SaveBite_Complete_Project.zip" class="banner-cta">
+      <span>⬇️</span> Download Complete ZIP
+    </a>
+  </div>
+
+  <div class="auth-page">
+    <!-- Left Showcase Side -->
+    <div class="auth-side-showcase">
+      <img src="assets/images/login_pantry_showcase.jpg" alt="Airtight glass pantry jars with fresh sourdough and legumes" class="auth-showcase-bg" />
+      <div class="auth-showcase-content">
+        <div class="auth-showcase-top">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10c0-1.846-.5-3.577-1.378-5.06"/>
+              <path d="M12 6v6l4 2"/>
+              <path d="M16 2.5a5 5 0 0 1 5 5"/>
+            </svg>
+            SaveBite<span class="dot" style="color: #4ade80;">.</span>
+          </a>
+        </div>
+
+        <div class="auth-showcase-quote">
+          <h2>Turn Good Intentions into Long-Lasting Freshness</h2>
+          <p>Track expiry milestones, adopt smart refrigeration methods, and join a conscious community working to cut grocery waste to zero.</p>
+          
+          <ul class="auth-feature-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Intelligent expiry countdown with status badges</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Scientific food storage &amp; crisper recommendations</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Peer-to-peer surplus food sharing board</span>
+            </li>
+          </ul>
+        </div>
+
+        <div style="font-size: 0.8125rem; color: #94a3b8;">
+          SaveBite Project &copy; 2026. Browser LocalStorage Demo Environment.
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Centered Login Form -->
+    <div class="auth-form-wrapper">
+      <div style="margin-bottom: 1.5rem;">
+        <a href="index.html" style="font-size: 0.875rem; color: var(--color-text-muted); display: inline-flex; align-items: center; gap: 0.35rem;">
+          &larr; Back to Home
+        </a>
+      </div>
+
+      <div class="auth-form-header">
+        <h2>Sign In to SaveBite</h2>
+        <p>Access your personalized food inventory and waste analytics.</p>
+      </div>
+
+      <!-- Quick Demo Account Helper -->
+      <div class="demo-account-box">
+        <strong>⚡ One-Click Demo Account</strong>
+        <div>Email: <code class="tabular-nums" style="background: rgba(0,0,0,0.05); padding: 2px 4px; border-radius: 4px;">demo@savebite.org</code></div>
+        <div>Password: <code class="tabular-nums" style="background: rgba(0,0,0,0.05); padding: 2px 4px; border-radius: 4px;">password123</code></div>
+        <button type="button" id="fill-demo-credentials" class="fill-demo-btn">
+          Load Demo Credentials
+        </button>
+      </div>
+
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login-email" class="form-label">Email Address <span class="required">*</span></label>
+          <input 
+            type="email" 
+            id="login-email" 
+            class="form-control" 
+            placeholder="name@example.com" 
+            required 
+            autocomplete="email"
+          />
+        </div>
+
+        <div class="form-group">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <label for="login-password" class="form-label">Password <span class="required">*</span></label>
+            <a href="#" id="forgot-password-link" style="font-size: 0.8125rem; color: var(--color-primary);">Forgot password?</a>
+          </div>
+          <div class="input-password-wrapper">
+            <input 
+              type="password" 
+              id="login-password" 
+              class="form-control" 
+              placeholder="Enter your password" 
+              required 
+              autocomplete="current-password"
+            />
+            <button type="button" id="toggle-password-btn" class="toggle-password">Show</button>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label class="form-checkbox">
+            <input type="checkbox" id="login-remember" checked />
+            <span>Remember me for this session</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem;">
+          Login to SaveBite
+        </button>
+      </form>
+
+      <div style="text-align: center; margin-top: 1.75rem; font-size: 0.875rem; color: var(--color-text-muted);">
+        Don't have an account yet? 
+        <a href="register.html" style="color: var(--color-primary-dark); font-weight: 700;">Create an account</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register — SaveBite Food Management</title>
+  <meta name="description" content="Create a free SaveBite account to track pantry items, avoid grocery waste, and participate in community surplus sharing." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="background: #ffffff;">
+
+  <!-- Global Project Banner -->
+  <div class="project-banner">
+    <div class="banner-content">
+      <span class="badge-demo">Demo Edition</span>
+      <span>SaveBite Web Application &amp; Demonstration Suite</span>
+    </div>
+    <a href="SaveBite_Complete_Project.zip" download="SaveBite_Complete_Project.zip" class="banner-cta">
+      <span>⬇️</span> Download Complete ZIP
+    </a>
+  </div>
+
+  <div class="auth-page">
+    <!-- Left Showcase Side -->
+    <div class="auth-side-showcase">
+      <img src="assets/images/waste_tracker_mindful.jpg" alt="Mindful food preparation in glass storage containers" class="auth-showcase-bg" />
+      <div class="auth-showcase-content">
+        <div class="auth-showcase-top">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10c0-1.846-.5-3.577-1.378-5.06"/>
+              <path d="M12 6v6l4 2"/>
+              <path d="M16 2.5a5 5 0 0 1 5 5"/>
+            </svg>
+            SaveBite<span class="dot" style="color: #4ade80;">.</span>
+          </a>
+        </div>
+
+        <div class="auth-showcase-quote">
+          <h2>Join the Zero-Waste Movement</h2>
+          <p>Whether you manage a busy household kitchen, run an artisanal bakery with daily surplus, or organize volunteer food distribution, SaveBite keeps good food on plates.</p>
+
+          <ul class="auth-feature-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Individual, Provider, and NGO role support</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Personalized pantry shelf-life tracking</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Instant local browser storage persistence</span>
+            </li>
+          </ul>
+        </div>
+
+        <div style="font-size: 0.8125rem; color: #94a3b8;">
+          SaveBite Project &copy; 2026. Browser LocalStorage Demo Environment.
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Centered Registration Form -->
+    <div class="auth-form-wrapper">
+      <div style="margin-bottom: 1.5rem;">
+        <a href="index.html" style="font-size: 0.875rem; color: var(--color-text-muted); display: inline-flex; align-items: center; gap: 0.35rem;">
+          &larr; Back to Home
+        </a>
+      </div>
+
+      <div class="auth-form-header">
+        <h2>Create an Account</h2>
+        <p>Set up your profile to start tracking and preserving food.</p>
+      </div>
+
+      <form id="register-form">
+        <div class="form-group">
+          <label for="reg-name" class="form-label">Full Name <span class="required">*</span></label>
+          <input 
+            type="text" 
+            id="reg-name" 
+            class="form-control" 
+            placeholder="e.g. Maya Lin" 
+            required 
+            autocomplete="name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="reg-email" class="form-label">Email Address <span class="required">*</span></label>
+          <input 
+            type="email" 
+            id="reg-email" 
+            class="form-control" 
+            placeholder="maya@example.com" 
+            required 
+            autocomplete="email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="reg-user-type" class="form-label">User Category <span class="required">*</span></label>
+          <select id="reg-user-type" class="form-control" required>
+            <option value="Individual">Individual / Household</option>
+            <option value="Food Provider">Food Provider (Bakery, Café, Restaurant)</option>
+            <option value="NGO / Volunteer">NGO / Community Food Shelter</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="reg-password" class="form-label">Password <span class="required">*</span></label>
+            <input 
+              type="password" 
+              id="reg-password" 
+              class="form-control" 
+              placeholder="At least 6 chars" 
+              required 
+              minlength="6"
+              autocomplete="new-password"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="reg-confirm-password" class="form-label">Confirm Password <span class="required">*</span></label>
+            <input 
+              type="password" 
+              id="reg-confirm-password" 
+              class="form-control" 
+              placeholder="Re-enter password" 
+              required 
+              minlength="6"
+              autocomplete="new-password"
+            />
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label class="form-checkbox">
+            <input type="checkbox" id="reg-terms" required />
+            <span>I accept the SaveBite community guidelines and responsible food preservation principles.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem;">
+          Register Account
+        </button>
+      </form>
+
+      <div style="text-align: center; margin-top: 1.75rem; font-size: 0.875rem; color: var(--color-text-muted);">
+        Already have an account? 
+        <a href="login.html" style="color: var(--color-primary-dark); font-weight: 700;">Sign in here</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
